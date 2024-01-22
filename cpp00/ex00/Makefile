@@ -4,7 +4,7 @@ SRCS 		:= megaphone.cpp
 OBJS		:= $(SRCS:.cpp=.o)
 
 CC 			:= c++
-CFLAGS		:= -Wall -Wextra -Werror -std=c++98 -g
+CFLAGS		:= -Wall -Wextra -Werror -std=c++98
 
 RM			:= rm -f
 MAKEFLAGS   += --no-print-directory
