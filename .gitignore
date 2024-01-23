@@ -1,9 +1,12 @@
 *.o
 *.out
 .vscode
+*.txt*
+
 
 megaphone
 phonebook
 zombie
 zombieHorde
 thisIsBrain
+replace
