@@ -6,12 +6,12 @@
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 11:51:24 by lray              #+#    #+#             */
-/*   Updated: 2024/01/22 16:18:36 by lray             ###   ########.fr       */
+/*   Updated: 2024/01/31 12:17:34 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Contact.h"
-#include "PhoneBook.h"
+#include "Contact.hpp"
+#include "PhoneBook.hpp"
 
 #include <string>
 #include <iostream>

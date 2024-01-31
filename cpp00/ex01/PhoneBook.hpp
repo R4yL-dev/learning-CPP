@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   PhoneBook.h                                        :+:      :+:    :+:   */
+/*   PhoneBook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 11:47:53 by lray              #+#    #+#             */
-/*   Updated: 2024/01/31 12:10:49 by lray             ###   ########.fr       */
+/*   Updated: 2024/01/31 12:17:49 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PHONEBOOK_H
 #define PHONEBOOK_H
 
-#include "Contact.h"
+#include "Contact.hpp"
 #include <iomanip>
 #include <climits>
 
@@ -25,10 +25,10 @@ public:
 	PhoneBook();
 	~PhoneBook();
 	void	addContact();
-	void	searchContact();
+	void	searchContact() const;
 private:
-	Contact	m_array[BOOK_SIZE];
-	int		m_numContact;
+	Contact	_array[BOOK_SIZE];
+	int		_numContact;
 
 	std::string truncate(const std::string &str, size_t width) const;
 };

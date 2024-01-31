@@ -6,11 +6,11 @@
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 11:50:13 by lray              #+#    #+#             */
-/*   Updated: 2024/01/22 17:10:40 by lray             ###   ########.fr       */
+/*   Updated: 2024/01/31 12:17:14 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Contact.h"
+#include "Contact.hpp"
 
 Contact::Contact(
 	const std::string &firstName,

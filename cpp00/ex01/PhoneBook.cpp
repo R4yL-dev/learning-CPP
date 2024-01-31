@@ -6,15 +6,15 @@
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 11:48:59 by lray              #+#    #+#             */
-/*   Updated: 2024/01/22 17:13:36 by lray             ###   ########.fr       */
+/*   Updated: 2024/01/31 12:17:01 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "PhoneBook.h"
+#include "PhoneBook.hpp"
 
 PhoneBook::PhoneBook()
 {
-	m_numContact = 0;
+	_numContact = 0;
 }
 
 PhoneBook::~PhoneBook()
@@ -24,35 +24,35 @@ PhoneBook::~PhoneBook()
 
 void PhoneBook::addContact()
 {
-	if (m_numContact > 0)
+	if (_numContact > 0)
 	{
 		for (int i = BOOK_SIZE - 1; i > 0; --i)
 		{
-			m_array[i] = m_array[i - 1];
+			_array[i] = _array[i - 1];
 		}
 	}
-	m_array[0].fillContactInfo();
-	if (m_numContact < BOOK_SIZE)
-		m_numContact++;
+	_array[0].fillContactInfo();
+	if (_numContact < BOOK_SIZE)
+		_numContact++;
 }
 
-void PhoneBook::searchContact()
+void PhoneBook::searchContact() const
 {
 	std::cout << "| " << std::setw(10) << "Index" << " | ";
 	std::cout << std::setw(10) << "First Name" << " | ";
 	std::cout << std::setw(10) << "Last Name" << " | ";
 	std::cout << std::setw(10) << "Nickname" << " |"<< std::endl;
 	std::cout << "| ---------- | ---------- | ---------- | ---------- |" << std::endl;
-	for (int i = 0; i < m_numContact; ++i)
+	for (int i = 0; i < _numContact; ++i)
 	{
 		std::cout << "| " << std::setw(10) << i + 1 << " | ";
-		std::cout << std::setw(10) << truncate(m_array[i].getFirstName(), 10) << " | ";
-		std::cout << std::setw(10) << truncate(m_array[i].getLastName(), 10) << " | ";
-		std::cout << std::setw(10) << truncate(m_array[i].getNickName(), 10) << " |";
+		std::cout << std::setw(10) << truncate(_array[i].getFirstName(), 10) << " | ";
+		std::cout << std::setw(10) << truncate(_array[i].getLastName(), 10) << " | ";
+		std::cout << std::setw(10) << truncate(_array[i].getNickName(), 10) << " |";
 		std::cout << std::endl;
 	}
 	int id = -1;
-	if (m_numContact > 0)
+	if (_numContact > 0)
 	{
 		std::string input;
 		do
@@ -70,8 +70,8 @@ void PhoneBook::searchContact()
 				if (allDigits)
 					id = std::stoi(input);
 			}
-		} while (id < 1 || id > m_numContact);
-		m_array[id - 1].print();
+		} while (id < 1 || id > _numContact);
+		_array[id - 1].print();
 
 	}
 }
