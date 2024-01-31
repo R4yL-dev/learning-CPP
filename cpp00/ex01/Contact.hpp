@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Contact.h                                          :+:      :+:    :+:   */
+/*   Contact.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 11:48:34 by lray              #+#    #+#             */
-/*   Updated: 2024/01/22 16:27:04 by lray             ###   ########.fr       */
+/*   Updated: 2024/01/31 12:23:17 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,11 +48,11 @@ public:
 	void		print() const;
 	void		fillContactInfo();
 private:
-	std::string	m_firstName;
-	std::string	m_lastName;
-	std::string	m_nickName;
-	std::string	m_phoneNumber;
-	std::string	m_secret;
+	std::string	_firstName;
+	std::string	_lastName;
+	std::string	_nickName;
+	std::string	_phoneNumber;
+	std::string	_secret;
 
 	bool		validateField(const std::string &data) const;
 };

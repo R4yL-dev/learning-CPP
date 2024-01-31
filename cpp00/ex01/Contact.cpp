@@ -6,7 +6,7 @@
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 11:50:13 by lray              #+#    #+#             */
-/*   Updated: 2024/01/31 12:17:14 by lray             ###   ########.fr       */
+/*   Updated: 2024/01/31 12:23:06 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,57 +34,57 @@ Contact::~Contact()
 void Contact::setFirstName(const std::string &firstName)
 {
 	if (validateField(firstName))
-		m_firstName = firstName;
+		_firstName = firstName;
 }
 void Contact::setLastName(const std::string &lastName)
 {
 	if (validateField(lastName))
-		m_lastName = lastName;
+		_lastName = lastName;
 }
 void Contact::setNickName(const std::string &nickName)
 {
 	if (validateField(nickName))
-		m_nickName = nickName;
+		_nickName = nickName;
 }
 void Contact::setPhoneNumber(const std::string &phoneNumber)
 {
 	if (validateField(phoneNumber))
-		m_phoneNumber = phoneNumber;
+		_phoneNumber = phoneNumber;
 }
 void Contact::setSecret(const std::string &secret)
 {
 	if (validateField(secret))
-		m_secret = secret;
+		_secret = secret;
 }
 
 std::string	Contact::getFirstName() const
 {
-	return m_firstName;
+	return _firstName;
 }
 std::string	Contact::getLastName() const
 {
-	return m_lastName;
+	return _lastName;
 }
 std::string	Contact::getNickName() const
 {
-	return m_nickName;
+	return _nickName;
 }
 std::string	Contact::getPhoneNumber() const
 {
-	return m_phoneNumber;
+	return _phoneNumber;
 }
 std::string	Contact::getSecret() const
 {
-	return m_secret;
+	return _secret;
 }
 
 void Contact::print() const
 {
-	std::cout << std::left << std::setw(15) << "First name: " << m_firstName << "\n";
-	std::cout << std::left << std::setw(15) << "Last name: " << m_lastName << "\n";
-	std::cout << std::left << std::setw(15) << "Nickname: " << m_nickName << "\n";
-	std::cout << std::left << std::setw(15) << "Phone number: " << m_phoneNumber << "\n";
-	std::cout << std::left << std::setw(15) << "Secret: " << m_secret << std::endl;
+	std::cout << std::left << std::setw(15) << "First name: " << _firstName << "\n";
+	std::cout << std::left << std::setw(15) << "Last name: " << _lastName << "\n";
+	std::cout << std::left << std::setw(15) << "Nickname: " << _nickName << "\n";
+	std::cout << std::left << std::setw(15) << "Phone number: " << _phoneNumber << "\n";
+	std::cout << std::left << std::setw(15) << "Secret: " << _secret << std::endl;
 }
 
 void Contact::fillContactInfo()
