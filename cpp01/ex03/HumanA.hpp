@@ -6,7 +6,7 @@
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 10:28:48 by lray              #+#    #+#             */
-/*   Updated: 2024/01/23 11:15:59 by lray             ###   ########.fr       */
+/*   Updated: 2024/01/31 12:55:51 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,12 @@ class HumanA
 {
 public:
 	HumanA(const std::string& name, Weapon& weapon);
+	~HumanA();
 	void attack() const;
 
 private:
-	std::string name;
-	Weapon& weapon;
+	std::string _name;
+	Weapon& _weapon;
 };
 
 #endif
