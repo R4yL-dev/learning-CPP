@@ -6,7 +6,7 @@
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 20:29:54 by lray              #+#    #+#             */
-/*   Updated: 2024/01/22 20:45:57 by lray             ###   ########.fr       */
+/*   Updated: 2024/01/31 12:29:42 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ public:
 	~Zombie();
 
 	void setName(std::string &name);
-	void announce(void);
+	void announce(void) const;
 private:
-	std::string name;
+	std::string _name;
 };
 
 Zombie* newZombie(std::string name);
