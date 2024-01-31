@@ -6,7 +6,7 @@
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 11:47:53 by lray              #+#    #+#             */
-/*   Updated: 2024/01/22 16:25:22 by lray             ###   ########.fr       */
+/*   Updated: 2024/01/31 12:10:49 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include <iomanip>
 #include <climits>
 
-#define BOOK_SIZE 2
+#define BOOK_SIZE 8
 
 class PhoneBook
 {
