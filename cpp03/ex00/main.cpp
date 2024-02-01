@@ -6,7 +6,7 @@
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 12:41:23 by lray              #+#    #+#             */
-/*   Updated: 2024/02/01 14:53:28 by lray             ###   ########.fr       */
+/*   Updated: 2024/02/01 16:47:51 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int main() {
 	std::cout << "\n-- TEST ATTACK WHEN NO ENERGY --" << std::endl;
 	ct2.attack("Garogo");
 
-	std::cout << "\n-- TEST NEREPAIRED WHEN NO ENERGY --" << std::endl;
+	std::cout << "\n-- TEST BEREPAIRED WHEN NO ENERGY --" << std::endl;
 	ct2.beRepaired(1);
 
 	std::cout << "\n-- CLAPTRAP DESTRUCTION --" << std::endl;
