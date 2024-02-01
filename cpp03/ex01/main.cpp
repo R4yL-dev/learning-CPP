@@ -6,7 +6,7 @@
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 12:41:23 by lray              #+#    #+#             */
-/*   Updated: 2024/02/01 16:46:46 by lray             ###   ########.fr       */
+/*   Updated: 2024/02/01 16:48:34 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,6 @@ int main() {
 	std::cout << "\n-- TEST GUARDGATE WHEN DEAD --" << std::endl;
 	st1.guardGate();
 
-	std::cout << "\n-- CLAPTRAP DESTRUCTION --" << std::endl;
+	std::cout << "\n-- SCAVTRAP DESTRUCTION --" << std::endl;
 	return 0;
 }
