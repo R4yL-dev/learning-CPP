@@ -6,7 +6,7 @@
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 12:41:23 by lray              #+#    #+#             */
-/*   Updated: 2024/02/01 16:21:54 by lray             ###   ########.fr       */
+/*   Updated: 2024/02/01 16:46:46 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,12 @@ int main() {
 
 	std::cout << "\n-- TEST BEREPAIRED WHEN NO ENERGY --" << std::endl;
 	st2.beRepaired(1);
+
+	std::cout << "\n-- TEST GUARDGATE --" << std::endl;
+	st3.guardGate();
+
+	std::cout << "\n-- TEST GUARDGATE WHEN DEAD --" << std::endl;
+	st1.guardGate();
 
 	std::cout << "\n-- CLAPTRAP DESTRUCTION --" << std::endl;
 	return 0;
