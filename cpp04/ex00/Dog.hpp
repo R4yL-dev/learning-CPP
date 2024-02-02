@@ -6,7 +6,7 @@
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 12:35:23 by lray              #+#    #+#             */
-/*   Updated: 2024/02/02 13:04:01 by lray             ###   ########.fr       */
+/*   Updated: 2024/02/02 14:55:39 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ class Dog : public Animal {
 
 public:
 	Dog();
+	Dog(Dog const &src);
+	Dog &operator=(Dog const &rhs);
 	virtual ~Dog();
 
 	void makeSound() const;

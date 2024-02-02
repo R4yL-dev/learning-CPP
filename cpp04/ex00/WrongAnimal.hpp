@@ -6,7 +6,7 @@
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 12:07:47 by lray              #+#    #+#             */
-/*   Updated: 2024/02/02 13:17:19 by lray             ###   ########.fr       */
+/*   Updated: 2024/02/02 15:08:02 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ public:
 	WrongAnimal();
 	WrongAnimal(std::string const &type);
 	WrongAnimal(WrongAnimal const &src);
-	virtual ~WrongAnimal();
+	~WrongAnimal();
 	WrongAnimal &operator=(WrongAnimal const &rhs);
 
 	const std::string &getType() const;
