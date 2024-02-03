@@ -46,5 +46,43 @@ A la fin d'une ligne, il m'arrive d'utiliser *std::endl*. *endl* ajoute une *\n*
 
 ## ex01
 
+Cette exercie est le premier dans le quel je sépare la définition (fichier .hpp) et l implémentation (fichier .cpp) de mes classe. Nous allons maintenant appliquer cette structure pour toute nos classe. Cela permet de separer et de parcourir le code de façon plus claire.
+
+Nous ne devons jamais implementer de code dans les fichier header. Son but est de contenir le prototype de la classe ainsi que les prototypes des methodes de la classe.
+
+### getline
+
+L utilisateur doit pouvoir entrer des commande. Pour se faire, nous devons interagir avec *std::cin*. Afin de pouvoir gerer facilement la saisie d une ligne complete par l utilisateur, *iostream* nous mette a disposition la methode *getline()*. En utilsant cette fonction, nous n avons pas besoin de reflechir au caractere *\n* qui est recu lorsque l utilisateur fait *Enter*.
+
+### iomanip
+
+Le sujet demande que les données sur les contacte affichée lors d un SEARCH soit affiché dans des colones de 10 caractères. Pour se faire, j ai utiliser la methode `std::setw()`. Il fallait aussi trouver une solution pour tronquer les données qui comportait plus de 10 caractères. Pour se faire, j ai creer une fonction *truncate* :
+
+```c++
+std::string	PhoneBook::truncate(const std::string &str, size_t width) const
+{
+	if (str.length() > width)
+		return str.substr(0, width - 1) + ".";
+	return str;
+}
+```
+
 ## ex02
 
+### Time
+
+Afin de pouvoir afficher l horodatage, il a fallu utiliser des fonctions pour pouvoir calculer le temps ecouler. Pour faire ces manipulations sur le temps, j ai utiliser des fonction fournie par la bibliotheque *ctime*.
+
+`std::time_t now = std::time(0);` : la fonction *time* permet de recuperer le temps en second eecouler depuis le 1er janvier 1970 (timestamp).
+
+`std::tm *localtm = std::localtime(&now);` : J utilise la fonction *localtime()* afin de convertir le timestamp *now* en une structure de donnees qui est plus facile a traiter. Cette structure contient les informations comme par exemple : l année, le mois, ect...
+
+Pour afficher l année, j utilise `localtm->tm_year + 1900`. Ici, nous devons ajouter 1900 car tm_years contient le nombre d année ecoulée depuis 1900. Afin d avoir l année, il faut donc ajouter 1900.
+
+Pour le mois (localtm->tm_mon + 1), nous devons ajouter 1 car les mois sont indexer a partir de 0.
+
+Tout se formatage affiche la date sous forme *[YYYYMMDD_HHMMSS]*.
+
+### setfill
+
+Pour afficher l horodatage, j utilise la fonction `setfill('0')`. Cette fonction permet de remplir un champ avec le caractere passer en argument. Cela permet d afficher correctenment les informations si elles sont moins grande que la taille du champ.
