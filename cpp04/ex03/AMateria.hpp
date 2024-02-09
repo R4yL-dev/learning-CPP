@@ -6,7 +6,7 @@
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 17:12:44 by lray              #+#    #+#             */
-/*   Updated: 2024/02/02 18:30:14 by lray             ###   ########.fr       */
+/*   Updated: 2024/02/09 11:09:02 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ public:
 	AMateria(std::string const &type);
 	AMateria(AMateria const &src);
 	AMateria &operator=(AMateria const &rhs);
-	~AMateria();
+	virtual ~AMateria();
 
 	std::string const &getType() const;
 

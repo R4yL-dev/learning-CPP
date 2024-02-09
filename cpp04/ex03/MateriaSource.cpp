@@ -6,7 +6,7 @@
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 21:51:29 by lray              #+#    #+#             */
-/*   Updated: 2024/02/02 22:21:45 by lray             ###   ########.fr       */
+/*   Updated: 2024/02/09 11:08:38 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ MateriaSource &MateriaSource::operator=(MateriaSource const &rhs) {
 		if (this->_storage[i])
 			delete this->_storage[i];
 		if (rhs._storage[i] == NULL)
-			this->_storage[i];
+			this->_storage[i] = NULL;
 		else
 			this->_storage[i] = rhs._storage[i]->clone();
 	}
