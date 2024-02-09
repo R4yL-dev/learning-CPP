@@ -6,7 +6,7 @@
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 17:34:45 by lray              #+#    #+#             */
-/*   Updated: 2024/01/31 18:43:18 by lray             ###   ########.fr       */
+/*   Updated: 2024/02/09 12:36:42 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,6 +91,7 @@ Fixed &Fixed::operator++() {
 }
 
 Fixed Fixed::operator++(int n) {
+	(void) n;
 	Fixed value = *this;
 	this->setRawBits(this->getRawBits() + 1);
 	return value;
@@ -102,6 +103,7 @@ Fixed &Fixed::operator--() {
 }
 
 Fixed Fixed::operator--(int n) {
+	(void) n;
 	Fixed value = *this;
 	this->setRawBits(this->getRawBits() - 1);
 	return value;
