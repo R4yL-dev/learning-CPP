@@ -6,7 +6,7 @@
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 12:41:45 by lray              #+#    #+#             */
-/*   Updated: 2024/02/01 16:20:55 by lray             ###   ########.fr       */
+/*   Updated: 2024/02/09 12:47:44 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class ClapTrap {
 public:
 	ClapTrap();
 	ClapTrap(std::string const &name);
-	ClapTrap(std::string const &name, uint const hitPoint, uint const energyPoint, uint const attackDamage);
+	ClapTrap(std::string const &name, unsigned int const hitPoint, unsigned int const energyPoint, unsigned int const attackDamage);
 	ClapTrap(ClapTrap const &src);
 	ClapTrap &operator=(ClapTrap const &rhs);
 	~ClapTrap();
@@ -31,9 +31,9 @@ public:
 
 protected:
 	std::string	_name;
-	int _hitPoint;
-	int _energyPoint;
-	int _attackDamage;
+	unsigned int _hitPoint;
+	unsigned int _energyPoint;
+	unsigned int _attackDamage;
 
 };
 
