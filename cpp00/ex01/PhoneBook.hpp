@@ -6,7 +6,7 @@
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 11:47:53 by lray              #+#    #+#             */
-/*   Updated: 2024/01/31 12:17:49 by lray             ###   ########.fr       */
+/*   Updated: 2024/02/09 11:31:32 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include "Contact.hpp"
 #include <iomanip>
 #include <climits>
+#include <sstream>
 
 #define BOOK_SIZE 8
 

@@ -6,7 +6,7 @@
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 11:48:59 by lray              #+#    #+#             */
-/*   Updated: 2024/01/31 12:17:01 by lray             ###   ########.fr       */
+/*   Updated: 2024/02/09 11:31:26 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ void PhoneBook::searchContact() const
 					break;
 				}
 				if (allDigits)
-					id = std::stoi(input);
+					std::istringstream(input) >> id;
 			}
 		} while (id < 1 || id > _numContact);
 		_array[id - 1].print();
