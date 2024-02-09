@@ -6,7 +6,7 @@
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 15:18:29 by lray              #+#    #+#             */
-/*   Updated: 2024/02/01 16:46:00 by lray             ###   ########.fr       */
+/*   Updated: 2024/02/09 12:45:59 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ ScavTrap::ScavTrap(std::string const &name) : ClapTrap(name, 100, 50, 20) {
 	std::cout << "name: " << this->_name << " | hit point: " << _hitPoint;
 	std::cout << " | energy point: " << _energyPoint << " | attack damage: " << _attackDamage << std::endl;
 }
-ScavTrap::ScavTrap(std::string const &name, uint const hitPoint, uint const energyPoint, uint const attackDamage) :
+ScavTrap::ScavTrap(std::string const &name, unsigned int const hitPoint, unsigned int const energyPoint, unsigned int const attackDamage) :
 	ClapTrap(name, hitPoint, energyPoint, attackDamage) {
 
 }
