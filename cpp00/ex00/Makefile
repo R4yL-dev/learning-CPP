@@ -4,8 +4,7 @@ SRCS 		:= megaphone.cpp
 OBJS		:= $(SRCS:.cpp=.o)
 
 CC 			:= c++
-CFLAGS		:= -Wall -Wextra -Werror -std=c++98
-
+CFLAGS		:= -Wall -Wextra -Werror -std=c++98 -fsanitize=address,undefined
 RM			:= rm -f
 MAKEFLAGS   += --no-print-directory
 
@@ -15,7 +14,7 @@ $(NAME) : $(OBJS)
 	$(CC) $(OBJS) $(CFLAGS) -o $(NAME)
 	$(info CREATED $(NAME))
 
-%.o : %.c
+%.o : %.cpp
 	$(CC) $(CFLAGS) -c $< -o $@
 	$(info CREATED $@)
 

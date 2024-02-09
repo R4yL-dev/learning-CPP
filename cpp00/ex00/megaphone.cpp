@@ -6,7 +6,7 @@
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 11:07:21 by lray              #+#    #+#             */
-/*   Updated: 2024/01/22 11:42:42 by lray             ###   ########.fr       */
+/*   Updated: 2024/02/09 11:25:51 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	main(int argc, char **argv)
 std::string strToUpper(const std::string &str)
 {
 	std::string res = str;
-	for (int i = 0; i < res.length(); ++i) {
+	for (size_t i = 0; i < res.length(); ++i) {
 		res[i] = std::toupper(str[i]);
 	}
 	return res;
