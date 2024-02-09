@@ -6,7 +6,7 @@
 /*   By: lray <lray@student.42lausanne.ch >         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 21:42:37 by lray              #+#    #+#             */
-/*   Updated: 2024/01/31 13:14:26 by lray             ###   ########.fr       */
+/*   Updated: 2024/02/09 11:39:37 by lray             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ static bool	replace(char **argv)
 		content.insert(pos, s2);
 		pos += s2.length();
 	}
-	std::ofstream outfile(std::string(argv[1]) + ".replace");
+	std::ofstream outfile((std::string(argv[1]) + ".replace").c_str());
 	if (!outfile)
 	{
 		std::cerr << "Error: Could not open output file " << argv[1] << ".replace" << std::endl;
