@@ -8,16 +8,16 @@
 #include <string>
 
 class RPN {
-public:
-  RPN(std::string const &str);
-  RPN(RPN const &src);
-  RPN &operator=(RPN const &rhs);
-  ~RPN();
+   public:
+	RPN(std::string const &str);
+	RPN(RPN const &src);
+	RPN &operator=(RPN const &rhs);
+	~RPN();
 
-private:
-  std::stack<int> _stack;
+   private:
+	std::stack<int> _stack;
 
-  RPN();
+	RPN();
 };
 
 #endif
