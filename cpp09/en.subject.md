@@ -97,9 +97,11 @@ Your Makefile must at least contain the rules $(NAME), all, clean, fclean and re
 
 ## Chapter IV - Exercise 00: Bitcoin Exchange
 
-| Turn-in directory : | ex00/ |
-| Files to turn in : | Makefile, main.cpp, BitcoinExchange.{cpp, hpp} |
-| Forbidden functions : | None |
+Turn-in directory: ex00/ 
+
+Files to turn in: Makefile, main.cpp, BitcoinExchange.{cpp, hpp}
+
+Forbidden functions: None
 
 You have to create a program which outputs the value of a certain amount of bitcoin
 on a certain date.
