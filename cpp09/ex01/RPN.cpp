@@ -15,13 +15,13 @@ RPN::RPN(std::string const &str) {
 			int operand1 = this->_stack.top();
 			this->_stack.pop();
 
-			if (token == "+")
+			if (token == "+") {
 				this->_stack.push(operand1 + operand2);
-			else if (token == "-")
+			} else if (token == "-") {
 				this->_stack.push(operand1 - operand2);
-			else if (token == "*")
+			} else if (token == "*") {
 				this->_stack.push(operand1 * operand2);
-			else if (token == "/") {
+			} else if (token == "/") {
 				if (operand2 == 0) {
 					throw std::runtime_error("division by zero");
 				}
