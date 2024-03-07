@@ -97,7 +97,7 @@ Your Makefile must at least contain the rules $(NAME), all, clean, fclean and re
 
 ## Chapter IV - Exercise 00: Bitcoin Exchange
 
-Turn-in directory : ex00/
+| Turn-in directory : | ex00/ |
 Files to turn in : Makefile, main.cpp, BitcoinExchange.{cpp, hpp}
 Forbidden functions : None
 
