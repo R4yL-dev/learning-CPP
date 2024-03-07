@@ -164,9 +164,9 @@ longer be usable for the rest of this module.
 
 ## Chapter V - Exercise 01: Reverse Polish Notation
 
-Turn-in directory : ex01/
-Files to turn in : Makefile, main.cpp, RPN.{cpp, hpp}
-Forbidden functions : None
+Turn-in directory : ex01/  
+Files to turn in : Makefile, main.cpp, RPN.{cpp, hpp}  
+Forbidden functions : None  
 
 You must create a program with these constraints:
 - The program name is RPN.
@@ -203,9 +203,9 @@ will not be usable for the rest of this module.
 
 ## Chapter VI - Exercise 02: PmergeMe
 
-Turn-in directory : ex02/
-Files to turn in : Makefile, main.cpp, PmergeMe.{cpp, hpp}
-Forbidden functions : None
+Turn-in directory : ex02/  
+Files to turn in : Makefile, main.cpp, PmergeMe.{cpp, hpp}  
+Forbidden functions : None  
 
 You must create a program with these constraints:
 - The name of the program is PmergeMe.
