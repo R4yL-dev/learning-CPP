@@ -15,7 +15,7 @@ int main() {
 		std::cout << "p2: " << p2 << std::endl;
 		std::cout << "p3: " << p3 << std::endl;
 	}
-	std::cout << "-- TEST BSP --" << std::endl;
+	std::cout << "\n-- TEST BSP --" << std::endl;
 	{
 		std::cout << "- TEST BSP SIMPLE CASE -" << std::endl;
 		Point p1(0, 0);
@@ -78,6 +78,7 @@ int main() {
 		std::cout << "Result: " << std::boolalpha << bsp(p1, p2, p3, point)
 				  << std::endl;
 	}
+	std::cout << std::endl;
 	{
 		std::cout << "- TEST POINT FLOAT -" << std::endl;
 		Point p1(0.0f, 0.0f);

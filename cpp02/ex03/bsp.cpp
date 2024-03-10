@@ -3,7 +3,6 @@
 static float area(Point const &p1, Point const &p2, Point const &p3);
 bool bsp(Point const a, Point const b, Point const c, Point const point) {
 	float d0, d1, d2, d3;
-	bool ret = false;
 
 	d0 = area(a, b, c);
 	d1 = area(point, a, b);
@@ -11,11 +10,12 @@ bool bsp(Point const a, Point const b, Point const c, Point const point) {
 	d3 = area(point, c, a);
 
 	if (d1 == 0 || d2 == 0 || d3 == 0) {
-		ret = false;
+		return false;
 	} else if (d1 + d2 + d3 == d0) {
-		ret = true;
+		return true;
+	} else {
+		return false;
 	}
-	return ret;
 }
 
 static float area(Point const &p1, Point const &p2, Point const &p3) {
